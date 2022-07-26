@@ -1,0 +1,45 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    requireConfigFile: false,
+  },
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  plugins: ["simple-import-sort", "import", "unused-imports"],
+  rules: {
+    curly: "error",
+    eqeqeq: "error",
+    "linebreak-style": ["error", "unix"],
+    "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
+    "no-console": ["error", { allow: ["error"] }],
+    "no-unused-vars": "off",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "padding-line-between-statements": [
+      "error",
+      { blankLine: "always", prev: "*", next: "return" },
+    ],
+    "prefer-const": "error",
+    "prefer-template": "error",
+    yoda: ["error", "never"],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "prettier/prettier": ["error", { printWidth: 100 }],
+    "simple-import-sort/exports": "error",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        vars: "all",
+        varsIgnorePattern: "^_",
+        args: "after-used",
+        argsIgnorePattern: "^_",
+      },
+    ],
+  },
+};

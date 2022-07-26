@@ -1,0 +1,46 @@
+{
+  "name": "eslint-config-codely",
+  "version": "1.0.0",
+  "description": "Codely's ESLint and Prettier Config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@types/node": "^16.11.12",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodelyTV/eslint-config-codely.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "ecmascript",
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "config",
+    "prettier",
+    "codely"
+  ],
+  "author": "Codely (www.codely.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/CodelyTV/eslint-config-codely/issues"
+  },
+  "homepage": "https://github.com/CodelyTV/eslint-config-codely#readme"
+}
