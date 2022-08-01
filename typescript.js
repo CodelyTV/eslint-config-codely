@@ -86,7 +86,6 @@ module.exports = {
         "@typescript-eslint/promise-function-async": ["error", { checkArrowFunctions: false }],
         "@typescript-eslint/sort-type-union-intersection-members": ["error"],
         "@typescript-eslint/switch-exhaustiveness-check": ["error"],
-        "folders/match-regex": [2, "^[a-z-]+$|__mock__", "/contexts/"],
       },
     },
   ],
