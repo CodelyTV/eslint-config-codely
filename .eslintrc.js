@@ -29,8 +29,11 @@ module.exports = {
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
+    "import/no-unresolved": "error",
+    "import/no-webpack-loader-syntax": "error",
     "prettier/prettier": ["error", { printWidth: 100 }],
     "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
