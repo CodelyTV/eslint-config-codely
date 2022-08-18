@@ -25,7 +25,7 @@
 
 1. Install the dependency
    ```bash
-   npm install --dev eslint-config-codely
+   npm install --save-dev eslint-config-codely
    ```
 2. Add it to your `.eslintrc.js` file:
    ```js
