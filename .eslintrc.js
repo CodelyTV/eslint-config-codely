@@ -48,14 +48,11 @@ module.exports = {
 
     // style
     curly: "error",
-    "linebreak-style": ["error", "unix"],
     "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
-    semi: ["error", "always"],
     "padding-line-between-statements": [
       "error",
       { blankLine: "always", prev: "*", next: "return" },
     ],
-    quotes: ["error", "double"],
 
     // plugins
     "import/first": "error",
