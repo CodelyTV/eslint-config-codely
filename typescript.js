@@ -81,6 +81,7 @@ module.exports = {
         "@typescript-eslint/promise-function-async": ["error", { checkArrowFunctions: false }],
         "@typescript-eslint/sort-type-union-intersection-members": ["error"],
         "@typescript-eslint/switch-exhaustiveness-check": ["error"],
+        "@typescript-eslint/no-unused-vars": "off",
       },
     },
   ],
