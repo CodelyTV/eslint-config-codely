@@ -64,6 +64,7 @@ module.exports = {
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
     "unused-imports/no-unused-imports": "error",
+    "no-unused-vars": "off",
     "unused-imports/no-unused-vars": [
       "warn",
       {
