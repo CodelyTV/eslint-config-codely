@@ -26,7 +26,7 @@ module.exports = {
     "require-atomic-updates": "error",
 
     // good practises
-    camelcase: "error",
+    camelcase: ["error", { properties: "never" }],
     eqeqeq: "error",
     "new-cap": ["error", { capIsNew: false }],
     "no-array-constructor": "error",
