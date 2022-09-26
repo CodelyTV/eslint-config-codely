@@ -28,7 +28,7 @@ module.exports = {
     // good practises
     camelcase: "error",
     eqeqeq: "error",
-    "new-cap": "error",
+    "new-cap": ["error", { capIsNew: false }],
     "no-array-constructor": "error",
     "no-console": ["error", { allow: ["error"] }],
     "no-else-return": ["error", { allowElseIf: false }],
