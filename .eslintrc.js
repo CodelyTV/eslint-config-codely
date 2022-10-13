@@ -22,7 +22,15 @@ module.exports = {
     "no-unmodified-loop-condition": "error",
     "no-unreachable-loop": "error",
     "no-unused-private-class-members": "error",
-    "no-use-before-define": "error",
+    "no-use-before-define": [
+      "error",
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        allowNamedExports: false,
+      },
+    ],
     "require-atomic-updates": "error",
 
     // good practises
