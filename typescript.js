@@ -10,7 +10,7 @@ module.exports = {
   extends: ["./.eslintrc.js"],
   overrides: [
     {
-      files: ["*.ts"],
+      files: ["*.ts", "*.tsx"],
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
