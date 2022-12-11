@@ -20,47 +20,43 @@ module.exports = {
 			rules: {
 				"@typescript-eslint/explicit-module-boundary-types": ["error"],
 				"@typescript-eslint/member-ordering": [
-					"error",
-					{
-						default: [
-							// Index signature
-							"signature",
-
-							// Fields
-							"public-static-field",
-							"protected-static-field",
-							"private-static-field",
-							"public-decorated-field",
-							"protected-decorated-field",
-							"private-decorated-field",
-							"public-instance-field",
-							"protected-instance-field",
-							"private-instance-field",
-							"public-abstract-field",
-							"protected-abstract-field",
-							"private-abstract-field",
-
-							// Constructors
-							"public-constructor",
-							"protected-constructor",
-							"private-constructor",
-
-							// Methods
-							"public-abstract-method",
-							"protected-abstract-method",
-							"private-abstract-method",
-							"public-static-method",
-							"protected-static-method",
-							"private-static-method",
-							"public-decorated-method",
-							"protected-decorated-method",
-							"private-decorated-method",
-							"public-instance-method",
-							"protected-instance-method",
-							"private-instance-method",
-						],
-					},
-				],
+          "error",
+          {
+            default: [
+              // Index signature
+              "signature",
+              // Fields
+              "public-static-field",
+              "protected-static-field",
+              "private-static-field",
+              "public-decorated-field",
+              "protected-decorated-field",
+              "private-decorated-field",
+              "public-instance-field",
+              "protected-instance-field",
+              "private-instance-field",
+              "public-abstract-field",
+              "protected-abstract-field",
+              "private-abstract-field",
+              //Constructors 
+              "public-constructor",
+              "protected-constructor",
+              "private-constructor",
+              "public-abstract-method",
+              "protected-abstract-method",
+              "private-abstract-method",
+              "public-static-method",
+              "protected-static-method",
+              "private-static-method",
+              "public-decorated-method",
+              "protected-decorated-method",
+              "private-decorated-method",
+              "public-instance-method",
+              "protected-instance-method",
+              "private-instance-method",
+            ],
+          },
+        ],
 				"@typescript-eslint/no-confusing-non-null-assertion": ["error"],
 				"@typescript-eslint/no-confusing-void-expression": [
 					"error",
