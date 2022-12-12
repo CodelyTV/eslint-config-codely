@@ -37,11 +37,16 @@
    ```js
    {
      extends: [ "eslint-config-codely/typescript" ],
-     parserOptions: {
-       project: ["./tsconfig.json"],
-     },
-   }
-   ```
+     overrides: [
+      {
+        files: ["*.ts", "*.tsx"],
+        parserOptions: {
+          project: ["./tsconfig.json"],
+        },
+      },
+    ]
+  }
+  ```
 
 ℹ️ Please note that some of the rules enabled by default require that you have `strict: true` in your `tsconfig.json`.
 
