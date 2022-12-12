@@ -18,7 +18,6 @@ module.exports = {
 			],
 			plugins: ["@typescript-eslint"],
 			rules: {
-				"@typescript-eslint/explicit-module-boundary-types": ["error"],
 				"@typescript-eslint/member-ordering": [
 					"error",
 					{
@@ -79,6 +78,12 @@ module.exports = {
 				"@typescript-eslint/promise-function-async": ["error", { checkArrowFunctions: false }],
 				"@typescript-eslint/switch-exhaustiveness-check": ["error"],
 				"@typescript-eslint/no-unused-vars": "off",
+			},
+		},
+		{
+			files: ["*.ts"],
+			rules: {
+				"@typescript-eslint/explicit-module-boundary-types": ["error"],
 			},
 		},
 	],
