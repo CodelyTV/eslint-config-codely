@@ -11,7 +11,7 @@ module.exports = {
 	extends: ["eslint:recommended", "plugin:prettier/recommended"],
 	plugins: ["simple-import-sort", "import", "unused-imports"],
 	rules: {
-		//error prevention
+		// error prevention
 		"array-callback-return": ["error", { checkForEach: true }],
 		"no-await-in-loop": "error",
 		"no-constant-binary-expression": "error",
