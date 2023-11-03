@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-codely",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Codely's ESLint and Prettier Config",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
-    "eslint-config-prettier": "^9.00.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
