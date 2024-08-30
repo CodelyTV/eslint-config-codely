@@ -75,7 +75,7 @@ export default [
 			"@typescript-eslint/promise-function-async": ["error", { checkArrowFunctions: false }],
 			"@typescript-eslint/switch-exhaustiveness-check": ["error"],
 			"unused-imports/no-unused-vars": "off",
-			"unused-imports/ no-unused-imports": "off",
+			"unused-imports/no-unused-imports": "off",
 			"@typescript-eslint/no-unused-vars": [
 				"error",
 				{
