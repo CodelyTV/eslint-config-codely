@@ -12,6 +12,7 @@ export default [
 		languageOptions: {
 			sourceType: "module",
 			parserOptions: {
+				projectService: true,
 				ecmaFeatures: {
 					jsx: true,
 				},
