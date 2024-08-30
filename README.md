@@ -52,7 +52,7 @@ import eslintConfigCodely from "eslint-config-codely";
 export default [
 	...eslintConfigCodely.ts,
 	{
-		// If you're using ts it's mandatory to add the path to your tsconfig
+		// You should add the path to your tsconfig
 		files: ["**/*.ts", "**/*.tsx"],
 		languageOptions: {
 			parserOptions: {
