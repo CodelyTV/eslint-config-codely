@@ -27,11 +27,12 @@
 
 ## 👀 How to use
 
-1. Install the dependency
+1. Install the dependency.
 ```bash
 npm install --save-dev eslint-config-codely
 ```
-2. Add it to your `eslint.config.js` file. 
+2. Add it to your `eslint.config.js` file.
+
 For JavaScript:
 ```js
 import eslintConfigCodely from "eslint-config-codely";
@@ -67,29 +68,29 @@ export default [
 
 ## 🤔 What it does
 
-- Lints JavaScript using [`eslint:recommended`](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#using-eslintrecommended) and [Prettier](https://prettier.io/)
-- Additionally, lints TypeScript using [`@typescript-eslint/recommended` and `@typescript-eslint/recommended-requiring-type-checking`](https://typescript-eslint.io/docs/linting/configs)
+- Lints JavaScript using [`eslint:recommended`](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#using-eslintrecommended) and [Prettier](https://prettier.io/).
+- Additionally, lints TypeScript using [`@typescript-eslint/recommended` and `@typescript-eslint/recommended-requiring-type-checking`](https://typescript-eslint.io/docs/linting/configs).
 - Uses the following plugins:
-  - [`import`](https://github.com/import-js/eslint-plugin-import/): helps validate proper imports
-  - [`simple-import-sort`](https://github.com/lydell/eslint-plugin-simple-import-sort/): sorts imports
-  - [`unused-imports`](https://github.com/sweepline/eslint-plugin-unused-imports): finds and removes unused ES6 module imports
-- Uses the following [JavaScript rules](https://github.com/CodelyTV/eslint-config-codely/blob/main/.eslintrc.js#L13) and [TypeScript rules](https://github.com/CodelyTV/eslint-config-codely/blob/main/typescript.js#L17)
+  - [`import`](https://github.com/import-js/eslint-plugin-import/): helps validate proper imports.
+  - [`simple-import-sort`](https://github.com/lydell/eslint-plugin-simple-import-sort/): sorts imports.
+  - [`unused-imports`](https://github.com/sweepline/eslint-plugin-unused-imports): finds and removes unused ES6 module imports.
+- Uses rules inside the [configs](configs) folder.
 
 ## 👌 Codely Code Quality Standards
 
 Publishing this package we are committing ourselves to the following code quality standards:
 
-- 🤝 Respect **Semantic Versioning**: No breaking changes in patch or minor versions
-- 🤏 No surprises in transitive dependencies: Use the **bare minimum dependencies** needed to meet the purpose
-- 🎯 **One specific purpose** to meet without having to carry a bunch of unnecessary other utilities
-- ✅ **Tests** as documentation and usage examples
-- 📖 **Well documented ReadMe** showing how to install and use
-- ⚖️ **License favoring Open Source** and collaboration
+- 🤝 Respect **Semantic Versioning**: No breaking changes in patch or minor versions.
+- 🤏 No surprises in transitive dependencies: Use the **bare minimum dependencies** needed to meet the purpose.
+- 🎯 **One specific purpose** to meet without having to carry a bunch of unnecessary other utilities.
+- ✅ **Tests** as documentation and usage examples.
+- 📖 **Well documented ReadMe** showing how to install and use.
+- ⚖️ **License favoring Open Source** and collaboration.
 
 ## 🔀 Related resources
 
-- [🔦 Linting en JavaScript y TypeScript](https://pro.codely.com/library/linting-en-javascript-y-typescript-188432/446893/about/): Used as a template to bootstrap this plugin
-- [🎯 Codely's ESLint Hexagonal Architecture plugin](https://github.com/CodelyTV/eslint-plugin-hexagonal-architecture): A plugin that helps you to enforce hexagonal architecture best practises. Valid for your JavaScript or TypeScript projects
+- [🔦 Linting en JavaScript y TypeScript](https://pro.codely.com/library/linting-en-javascript-y-typescript-188432/446893/about/): Used as a template to bootstrap this plugin.
+- [🎯 Codely's ESLint Hexagonal Architecture plugin](https://github.com/CodelyTV/eslint-plugin-hexagonal-architecture): A plugin that helps you to enforce hexagonal architecture best practises. Valid for your JavaScript or TypeScript projects.
 
 Opinionated skeletons ready for different purposes:
 
