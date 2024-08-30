@@ -1,12 +1,11 @@
-import eslintPluginImportX from 'eslint-plugin-import-x'
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
-import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
-import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
-
-import globals from "globals";
 import js from "@eslint/js";
+import eslintPluginImportX from "eslint-plugin-import-x";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import eslintPluginSimpleImportSort from "eslint-plugin-simple-import-sort";
+import eslintPluginUnusedImports from "eslint-plugin-unused-imports";
+import globals from "globals";
 
-module.exports = [
+export default [
 	js.configs.recommended,
 	eslintPluginPrettierRecommended,
 	{
@@ -15,13 +14,13 @@ module.exports = [
 			sourceType: "module",
 			globals: {
 				...globals.browser,
-				...globals.node
-			}
+				...globals.node,
+			},
 		},
 		plugins: {
-			eslintPluginSimpleImportSort: eslintPluginSimpleImportSort,
-			eslintPluginImportX: eslintPluginImportX,
-			eslintPluginUnusedImports: eslintPluginUnusedImports,
+			"simple-import-sort": eslintPluginSimpleImportSort,
+			import: eslintPluginImportX,
+			"unused-imports": eslintPluginUnusedImports,
 		},
 		rules: {
 			// error prevention

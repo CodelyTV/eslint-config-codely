@@ -33,24 +33,15 @@ npm install --save-dev eslint-config-codely
 ```
 2. Add it to your `eslint.config.js` file:
 ```js
-import configs from "eslint-config-codely";
+import eslintConfigCodely from "eslint-config-codely";
 
 export default [
-
 	// Apply rules for js files
+	...eslintConfigCodely.js,
+	// Apply rules for ts and tsx files
+	...eslintConfigCodely.ts,
 	{
-		files: ["**/*.js"],
-		rules: {
-			...configs.js.rules
-		} 
-	},
-
-	// Apply rules for ts files
-	{
-		files: ["**/*.ts"],
-		rules: {
-			...configs.ts.rules
-		} 
+        // your config here
 	}
 ]
 ```
