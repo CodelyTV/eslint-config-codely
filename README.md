@@ -38,11 +38,19 @@ import eslintConfigCodely from "eslint-config-codely";
 export default [
 	// Apply rules for js files
 	...eslintConfigCodely.js,
+        
 	// Apply rules for ts and tsx files
 	...eslintConfigCodely.ts,
 	{
-        // your config here
+		// If you're using ts it's mandatory to add the path to your tsconfig
+		files: ["*.ts", "*.tsx"],
+		languageOptions: {
+			parserOptions: {
+				project: ["./tsconfig.json"],
+			},
+		}
 	}
+    // Your config here
 ]
 ```
 

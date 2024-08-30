@@ -5,18 +5,20 @@ import tseslint from "typescript-eslint";
 import eslintPluginCodely from "./codely-js.js";
 
 export default [
-	eslintPluginCodely,
+	...eslintPluginCodely,
 	...tseslint.configs.recommendedTypeChecked,
 	eslintPluginImportX.configs.typescript,
 	{
 		files: ["*.ts", "*.tsx"],
 		languageOptions: {
 			parser: tseslint.parser,
-			ecmaVersion: 12,
-			ecmaFeatures: {
-				jsx: true,
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true,
+				},
+				ecmaVersion: 12,
+				sourceType: "module",
 			},
-			sourceType: "module",
 			globals: {
 				...globals.browser,
 				...globals.node,
