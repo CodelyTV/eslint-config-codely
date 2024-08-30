@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-codely",
-	"version": "4.0.0-beta.2",
+	"version": "4.0.0-beta.3",
 	"description": "Codely's ESLint and Prettier Config",
 	"main": "index.js",
 	"scripts": {
@@ -9,6 +9,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@babel/core": "^7.25.1",
+		"@babel/eslint-parser": "^7.25.1",
 		"@eslint/js": "^9.9.1",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "^20.10.1",
