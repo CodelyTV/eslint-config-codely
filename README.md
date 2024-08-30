@@ -31,15 +31,24 @@
 ```bash
 npm install --save-dev eslint-config-codely
 ```
-2. Add it to your `eslint.config.js` file:
+2. Add it to your `eslint.config.js` file. 
+For JavaScript:
 ```js
 import eslintConfigCodely from "eslint-config-codely";
 
 export default [
-	// Apply rules for js files
 	...eslintConfigCodely.js,
-        
-	// Apply rules for ts and tsx files
+	{
+		// Your config here
+	}
+]
+```
+
+For TypeScript:
+```js
+import eslintConfigCodely from "eslint-config-codely";
+
+export default [
 	...eslintConfigCodely.ts,
 	{
 		// If you're using ts it's mandatory to add the path to your tsconfig
@@ -49,8 +58,8 @@ export default [
 				project: ["./tsconfig.json"],
 			},
 		}
+		// Your config here
 	}
-    // Your config here
 ]
 ```
 
