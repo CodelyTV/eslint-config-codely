@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://codely.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://codely.com/logo/codely_logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://codely.com/logo/codely_logo-light.svg">
-      <img alt="Codely logo" src="https://codely.com/logo/codely_logo.svg">
-    </picture>
+	<picture>
+	  <source media="(prefers-color-scheme: dark)" srcset="https://codely.com/logo/codely_logo-dark.svg">
+	  <source media="(prefers-color-scheme: light)" srcset="https://codely.com/logo/codely_logo-light.svg">
+	  <img alt="Codely logo" src="https://codely.com/logo/codely_logo.svg">
+	</picture>
   </a>
 </p>
 
@@ -13,8 +13,8 @@
 </h1>
 
 <p align="center">
-    <a href="https://github.com/CodelyTV"><img src="https://img.shields.io/badge/CodelyTV-OS-green.svg?style=flat-square" alt="Codely Open Source"/></a>
-    <a href="https://pro.codely.com"><img src="https://img.shields.io/badge/CodelyTV-PRO-black.svg?style=flat-square" alt="CodelyTV Courses"/></a>
+	<a href="https://github.com/CodelyTV"><img src="https://img.shields.io/badge/CodelyTV-OS-green.svg?style=flat-square" alt="Codely Open Source"/></a>
+	<a href="https://pro.codely.com"><img src="https://img.shields.io/badge/CodelyTV-PRO-black.svg?style=flat-square" alt="CodelyTV Courses"/></a>
 </p>
 
 <p align="center">
@@ -28,29 +28,32 @@
 ## 👀 How to use
 
 1. Install the dependency
-   ```bash
-   npm install --save-dev eslint-config-codely
-   ```
-2. Add it to your `.eslintrc.js` file:
-   ```js
-   {
-     extends: [ "eslint-config-codely" ]
-   }
-   ```
-3. If you are using TypeScript, extend the TypeScript configuration instead, and point to your `tsconfig.json` in `parserOptions`:
-   ```js
-   {
-     extends: [ "eslint-config-codely/typescript" ],
-     overrides: [
-       {
-         files: ["*.ts", "*.tsx"],
-         parserOptions: {
-           project: ["./tsconfig.json"],
-         },
-       },
-     ]
-   }
-   ```
+```bash
+npm install --save-dev eslint-config-codely
+```
+2. Add it to your `eslint.config.js` file:
+```js
+import configs from "eslint-config-codely";
+
+export default [
+
+	// Apply rules for js files
+	{
+		files: ["**/*.js"],
+		rules: {
+			...configs.js.rules
+		} 
+	},
+
+	// Apply rules for ts files
+	{
+		files: ["**/*.ts"],
+		rules: {
+			...configs.ts.rules
+		} 
+	}
+]
+```
 
 ℹ️ Please note that some of the rules enabled by default require that you have `strict: true` in your `tsconfig.json`.
 

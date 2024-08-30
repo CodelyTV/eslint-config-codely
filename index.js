@@ -1,3 +1,8 @@
-const eslintrc = require("./.eslintrc.js");
+"use strict";
 
-module.exports = eslintrc;
+module.exports = {
+	configs: {
+		js: require("./configs/codely-js"),
+		ts: require("./configs/codely-ts"),
+	},
+};
