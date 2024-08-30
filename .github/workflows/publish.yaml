@@ -1,7 +1,8 @@
-on: 
+on:
   push:
-    branches:    
+    branches:
       - 'main'
+      - 'flatconfig'
 
 jobs:
   publish:
