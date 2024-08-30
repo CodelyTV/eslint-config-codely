@@ -1,15 +1,17 @@
-import eslintPluginTypescript from "@typescript-eslint/eslint-plugin";
-import typescriptParser from "@typescript-eslint/parser";
+import eslintPluginImportX from "eslint-plugin-import-x";
 import globals from "globals";
+import tseslint from "typescript-eslint";
 
 import eslintPluginCodely from "./codely-js.js";
 
 export default [
 	eslintPluginCodely,
+	...tseslint.configs.recommendedTypeChecked,
+	eslintPluginImportX.configs.typescript,
 	{
 		files: ["*.ts", "*.tsx"],
 		languageOptions: {
-			parser: typescriptParser,
+			parser: tseslint.parser,
 			ecmaVersion: 12,
 			ecmaFeatures: {
 				jsx: true,
@@ -19,9 +21,6 @@ export default [
 				...globals.browser,
 				...globals.node,
 			},
-		},
-		plugins: {
-			"@typescript-eslint": eslintPluginTypescript,
 		},
 		rules: {
 			"@typescript-eslint/member-ordering": [

@@ -1,5 +1,3 @@
-"use strict";
-
 import jsConfigs from "./configs/codely-js.js";
 import tsConfigs from "./configs/codely-ts.js";
 
