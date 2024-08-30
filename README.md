@@ -43,7 +43,7 @@ export default [
 	...eslintConfigCodely.ts,
 	{
 		// If you're using ts it's mandatory to add the path to your tsconfig
-		files: ["*.ts", "*.tsx"],
+		files: ["**/*.ts", "**/*.tsx"],
 		languageOptions: {
 			parserOptions: {
 				project: ["./tsconfig.json"],

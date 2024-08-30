@@ -5,11 +5,11 @@ import tseslint from "typescript-eslint";
 import eslintPluginCodely from "./codely-js.js";
 
 export default [
-	...eslintPluginCodely,
 	...tseslint.configs.recommendedTypeChecked,
+	...eslintPluginCodely,
 	eslintPluginImportX.configs.typescript,
 	{
-		files: ["*.ts", "*.tsx"],
+		files: ["**/*.ts", "**/*.tsx"],
 		languageOptions: {
 			parser: tseslint.parser,
 			parserOptions: {
@@ -19,6 +19,7 @@ export default [
 				ecmaVersion: 12,
 				sourceType: "module",
 			},
+			sourceType: "module",
 			globals: {
 				...globals.browser,
 				...globals.node,
@@ -85,7 +86,7 @@ export default [
 		},
 	},
 	{
-		files: ["*.ts"],
+		files: ["**/*.ts"],
 		rules: {
 			"@typescript-eslint/explicit-module-boundary-types": ["error"],
 		},
