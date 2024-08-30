@@ -1,28 +1,20 @@
 import eslintPluginImportX from "eslint-plugin-import-x";
-import globals from "globals";
 import tseslint from "typescript-eslint";
 
 import eslintPluginCodely from "./codely-js.js";
 
 export default [
-	...tseslint.configs.recommendedTypeChecked,
 	...eslintPluginCodely,
+	...tseslint.configs.recommended,
 	eslintPluginImportX.configs.typescript,
 	{
 		files: ["**/*.ts", "**/*.tsx"],
 		languageOptions: {
-			parser: tseslint.parser,
+			sourceType: "module",
 			parserOptions: {
 				ecmaFeatures: {
 					jsx: true,
 				},
-				ecmaVersion: 12,
-				sourceType: "module",
-			},
-			sourceType: "module",
-			globals: {
-				...globals.browser,
-				...globals.node,
 			},
 		},
 		rules: {
@@ -82,7 +74,20 @@ export default [
 			"@typescript-eslint/prefer-readonly": ["error"],
 			"@typescript-eslint/promise-function-async": ["error", { checkArrowFunctions: false }],
 			"@typescript-eslint/switch-exhaustiveness-check": ["error"],
-			"@typescript-eslint/no-unused-vars": "off",
+			"unused-imports/no-unused-vars": "off",
+			"unused-imports/ no-unused-imports": "off",
+			"@typescript-eslint/no-unused-vars": [
+				"error",
+				{
+					args: "all",
+					argsIgnorePattern: "^_",
+					caughtErrors: "all",
+					caughtErrorsIgnorePattern: "^_",
+					destructuredArrayIgnorePattern: "^_",
+					varsIgnorePattern: "^_",
+					ignoreRestSiblings: true,
+				},
+			],
 		},
 	},
 	{

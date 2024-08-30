@@ -11,12 +11,12 @@ export default [
 	eslintPluginPrettierRecommended,
 	{
 		languageOptions: {
+			ecmaVersion: "latest",
+			sourceType: "module",
 			parser: babelParser,
 			parserOptions: {
 				requireConfigFile: false,
 			},
-			ecmaVersion: 2021,
-			sourceType: "module",
 			globals: {
 				...globals.browser,
 				...globals.node,
