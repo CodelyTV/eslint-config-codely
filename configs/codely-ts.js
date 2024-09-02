@@ -96,4 +96,10 @@ export default [
 			"@typescript-eslint/explicit-module-boundary-types": ["error"],
 		},
 	},
+	{
+		files: ["**/*.js"],
+		rules: {
+			"@typescript-eslint/no-unused-vars": ["off"],
+		},
+	},
 ];

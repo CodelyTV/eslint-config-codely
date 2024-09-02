@@ -1,20 +1,34 @@
+import eslintPluginCheckFile from "eslint-plugin-check-file";
+
 import eslintPluginCodely from "./codely-ts.js";
 
 export default [
 	...eslintPluginCodely,
 	{
 		ignores: [
-			"**/.yarn/",
+			"**/.idea/",
 			"**/.next/",
+			"**/.storybook/",
 			"**/.turbo/",
+			"**/.yarn/",
 			"**/node_modules/",
-			"**/test-results/",
 			"**/storybook-static/",
+			"**/test-results/",
 		],
 	},
 	{
+		plugins: {
+			"check-file": eslintPluginCheckFile,
+		},
 		rules: {
 			"prettier/prettier": ["error", { printWidth: 120, useTabs: true, tabWidth: 4 }],
+			"check-file/folder-naming-convention": [
+				"error",
+				{
+					// kebab-case and folders with square brackets are allowed
+					"**/*": "+([a-z-\\[\\]])",
+				},
+			],
 			"simple-import-sort/imports": [
 				"error",
 				{
