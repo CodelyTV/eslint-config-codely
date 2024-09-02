@@ -1,9 +1,11 @@
-import jsConfigs from "./configs/codely-js.js";
-import tsConfigs from "./configs/codely-ts.js";
+import fullConfig from "./configs/codely-full.js";
+import jsConfig from "./configs/codely-js.js";
+import tsConfig from "./configs/codely-ts.js";
 
 const eslintConfigCodely = {
-	js: jsConfigs,
-	ts: tsConfigs,
+	js: jsConfig,
+	ts: tsConfig,
+	full: fullConfig,
 };
 
 export default eslintConfigCodely;
