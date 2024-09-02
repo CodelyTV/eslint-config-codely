@@ -47,25 +47,6 @@ export default [
 ]
 ```
 
-For TypeScript:
-```js
-import eslintConfigCodely from "eslint-config-codely";
-
-export default [
-    ...eslintConfigCodely.ts,
-    {
-        // You should add the path to your tsconfig
-        files: ["**/*.ts", "**/*.tsx"],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.json"],
-            },
-        }
-        // Your config here
-    }
-]
-```
-
 ℹ️ Please note that some of the rules enabled by default require that you have `strict: true` in your `tsconfig.json`.
 
 ## 🤔 What it does

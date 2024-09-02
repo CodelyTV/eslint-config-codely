@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-codely",
-	"version": "4.0.1",
+	"version": "4.1.0",
 	"description": "Codely's ESLint and Prettier Config",
 	"main": "index.js",
 	"scripts": {
@@ -16,6 +16,7 @@
 		"@types/node": "^20.10.1",
 		"eslint": "^9.9.1",
 		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-check-file": "^2.8.0",
 		"eslint-plugin-import-x": "^4.1.1",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
