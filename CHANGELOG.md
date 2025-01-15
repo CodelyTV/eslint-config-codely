@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.1](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.0...eslint-config-codely-v4.3.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* improve readme docs (sorry for bumping a `fix` while it should be a `docs`, testing out the automated release process) ([#28](https://github.com/CodelyTV/eslint-config-codely/issues/28)) ([d020ad1](https://github.com/CodelyTV/eslint-config-codely/commit/d020ad1c4916dea6e0ba4ac5f98d19adc790f326))
+
 ## [4.3.0](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.2.0...eslint-config-codely-v4.3.0) (2025-01-15)
 
 
