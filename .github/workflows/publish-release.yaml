@@ -10,6 +10,8 @@ jobs:
       # Needed by googleapis/release-please-action@v4
       contents: write
       pull-requests: write
+      # Needed by `npm publish --provenance`
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: 🍄 Bump package version, create GitHub release, and update changelog
