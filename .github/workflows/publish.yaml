@@ -2,17 +2,31 @@ on:
   push:
     branches:
       - 'main'
-
+permissions:
+  # Needed by googleapis/release-please-action@v4
+  contents: write
+  pull-requests: write
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: 🍄 Bump package version, create GitHub release and changelog
+        uses: googleapis/release-please-action@v4
+        id: release
         with:
-          node-version: 12
-      - run: npm install
-      - run: npm test
-      - uses: JS-DevTools/npm-publish@v1
+          release-type: node
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: actions/setup-node@v4
+        if: ${{ steps.release.outputs.release_created }}
         with:
-          token: ${{ secrets.NPM_TOKEN }}
+          node-version: lts/*
+          registry-url: https://registry.npmjs.org
+      - name: 🚀 Publish to npm
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          npm install
+          npm run build --if-present
+          npm publish --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
