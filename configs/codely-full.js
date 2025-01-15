@@ -25,8 +25,8 @@ export default [
 			"check-file/folder-naming-convention": [
 				"error",
 				{
-					// kebab-case and folders with square brackets are allowed
-					"**/*": "+([a-z-\\[\\]])",
+					// kebab-case and folders with square brackets and parentheses are allowed
+					"**/*": "+([a-z-\\[\\]\\(\\)])",
 				},
 			],
 			"simple-import-sort/imports": [
