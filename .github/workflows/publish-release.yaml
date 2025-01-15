@@ -1,20 +1,22 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: 🚀 Publish Release
 on:
   push:
     branches:
       - 'main'
-permissions:
-  # Needed by googleapis/release-please-action@v4
-  contents: write
-  pull-requests: write
 jobs:
   publish:
+    permissions:
+      # Needed by googleapis/release-please-action@v4
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - name: 🍄 Bump package version, create GitHub release and changelog
+      - name: 🍄 Bump package version, create GitHub release, and update changelog
         uses: googleapis/release-please-action@v4
         id: release
         with:
-          release-type: node
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v4
