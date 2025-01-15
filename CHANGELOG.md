@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.2](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.1...eslint-config-codely-v4.3.2) (2025-01-15)
+
+
+### Bug Fixes
+
+* avoid using GitHub Personal Access Token while publishing a new release ([#30](https://github.com/CodelyTV/eslint-config-codely/issues/30)) ([b3d358b](https://github.com/CodelyTV/eslint-config-codely/commit/b3d358b424cfbeb1b5c1f907f8fcda337e4d645b))
+
 ## [4.3.1](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.0...eslint-config-codely-v4.3.1) (2025-01-15)
 
 
