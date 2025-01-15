@@ -29,54 +29,56 @@
 
 1. Install the dependency.
 
-```bash
-npm install --save-dev eslint-config-codely
-```
+   ```bash
+   npm install --save-dev eslint-config-codely
+   ```
 
 2. Add it to your `eslint.config.js`:
 
-```js
-import eslintConfigCodely from "eslint-config-codely";
+   ```js
+   import eslintConfigCodely from "eslint-config-codely";
+   
+   export default [
+       // If you're using js
+       ...eslintConfigCodely.js,
+       // Or if you're using ts. The ts config includes the js one, so you don't need to include it manually.
+       ...eslintConfigCodely.ts,
+       {
+           // Your config here
+       }
+   ]
+   ```
 
-export default [
-    // If you're using js
-    ...eslintConfigCodely.js,
-    // Or if you're using ts. The ts config includes the js one, so you don't need to include it manually.
-    ...eslintConfigCodely.ts,
-    {
-        // Your config here
-    }
-]
-```
+   Also, you can use the `full` config, which includes the `js`, `ts` and very opinionated Codely configs.
 
-Also, you can use the `full` config, which includes the `js`, `ts` and very opinionated Codely configs.
+   ```js
+   import eslintConfigCodely from "eslint-config-codely";
+   
+   export default [
+       ...eslintConfigCodely.full,
+       {
+           // Your config here
+       }
+   ]
+   ```
 
-```js
-import eslintConfigCodely from "eslint-config-codely";
+   We have a `course` setting.
+   This is the same as the `full` config, but with a narrower width due to the zoom used during
+video recordings:
 
-export default [
-    ...eslintConfigCodely.full,
-    {
-        // Your config here
-    }
-]
-```
+   ```js
+   import eslintConfigCodely from "eslint-config-codely";
+   
+   export default [
+       ...eslintConfigCodely.course,
+       {
+           // Your config here
+       }
+   ]
+   ```
 
-We have a `course` setting. This is the same as the `full` config, but with a narrower width due to the zoom used in
-videos:
-
-```js
-import eslintConfigCodely from "eslint-config-codely";
-
-export default [
-    ...eslintConfigCodely.course,
-    {
-        // Your config here
-    }
-]
-```
-
-ℹ️ Please note that some of the rules enabled by default require that you have `strict: true` in your `tsconfig.json`.
+> [!NOTE]  
+> Some rules enabled by default require `strict: true` to be set in your `tsconfig.json`.
 
 ## 🤔 What it does
 
