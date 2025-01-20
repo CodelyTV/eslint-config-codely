@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.4](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.3...eslint-config-codely-v4.3.4) (2025-01-20)
+
+
+### Bug Fixes
+
+* revert "fix: chore(deps): update non-breaking dependencies ([#32](https://github.com/CodelyTV/eslint-config-codely/issues/32))" due to breaking changes ([#34](https://github.com/CodelyTV/eslint-config-codely/issues/34)) ([8303ff8](https://github.com/CodelyTV/eslint-config-codely/commit/8303ff8dd6a6579767cc2a2a1aed062b8cd50472))
+
 ## [4.3.3](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.2...eslint-config-codely-v4.3.3) (2025-01-15)
 
 
