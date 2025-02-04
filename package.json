@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-codely",
-	"version": "4.4.0",
+	"version": "4.4.1",
 	"description": "Codely's ESLint and Prettier Config",
 	"main": "index.js",
 	"scripts": {
