@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.4.0](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.4...eslint-config-codely-v4.4.0) (2025-02-04)
+
+
+### Features
+
+* allow numbers in folder names ([#36](https://github.com/CodelyTV/eslint-config-codely/issues/36)) ([c9780f6](https://github.com/CodelyTV/eslint-config-codely/commit/c9780f62bdadbb6b24ff85025d721e48994d1896))
+
 ## [4.3.4](https://github.com/CodelyTV/eslint-config-codely/compare/eslint-config-codely-v4.3.3...eslint-config-codely-v4.3.4) (2025-01-20)
 
 
