@@ -25,8 +25,8 @@ export default [
 			"check-file/folder-naming-convention": [
 				"error",
 				{
-					// hyphens (kebab-case folders), square brackets (Next.js dynamic routes), parentheses (Next.js route groups), and numbers (i.e. i18n) allowed. 
-					"**/*": "+([a-z-0-9-\\[\\]\\(\\)])",
+					// hyphens (kebab-case folders), square brackets (Next.js dynamic routes), parentheses (Next.js route groups), numbers (i.e. i18n) and 3 consecutive dots i.e ([...rest]) are allowed  
+					"**/*": "+([a-z-0-9-\\[\\]\\(\\)\\.\\.\\.])"
 				},
 			],
 			"simple-import-sort/imports": [
