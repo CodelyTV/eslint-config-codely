@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.0](https://github.com/CodelyTV/eslint-config-codely/compare/v4.4.1...v4.5.0) (2025-02-12)
+
+
+### Features
+
+* support dots for catch-all segments on folder name ([#43](https://github.com/CodelyTV/eslint-config-codely/issues/43)) ([e0c1987](https://github.com/CodelyTV/eslint-config-codely/commit/e0c1987c94d8a06cee22df0ac3c064f96092adf7))
+
 ## [4.4.1](https://github.com/CodelyTV/eslint-config-codely/compare/v4.4.0...v4.4.1) (2025-02-04)
 
 ### Features
